@@ -1,0 +1,49 @@
+{
+  "name": "long-term",
+  "version": "0.1.0",
+  "description": "A small self-hosted workspace: browser terminals on tmux, a file editor, and an AI-driven browser test runner.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.6"
+  },
+  "bin": {
+    "long-term": "server.js"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test test/*.test.js",
+    "testkit": "node scripts/setup-testkit.js"
+  },
+  "dependencies": {
+    "@lydell/node-pty": "^1.2.0-beta.15",
+    "@xterm/addon-fit": "^0.11.0",
+    "@xterm/xterm": "^6.0.0",
+    "dompurify": "^3.4.15",
+    "express": "^5.2.1",
+    "marked": "^18.0.13",
+    "monaco-editor": "0.52.2",
+    "ws": "^8.21.3"
+  },
+  "keywords": [
+    "tmux",
+    "terminal",
+    "web-terminal",
+    "editor",
+    "monaco",
+    "xterm",
+    "playwright",
+    "claude-code"
+  ],
+  "files": [
+    "server.js",
+    "src",
+    "public",
+    "lab-template",
+    "scripts",
+    ".env.example",
+    "README.md",
+    "LICENSE"
+  ]
+}

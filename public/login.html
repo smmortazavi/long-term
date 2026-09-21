@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in · Long-term</title>
+  <link rel="stylesheet" href="/login.css">
+  <link rel="icon" href="data:,">
+</head>
+<body class="login">
+  <form id="form" class="login-card" autocomplete="off">
+    <h1>Long-term</h1>
+    <p class="muted">Enter the access token printed when the server started, or saved in <code>~/.long-term/token</code>.</p>
+    <label for="token">Access token</label>
+    <input id="token" type="password" autofocus required spellcheck="false" autocomplete="current-password">
+    <button class="primary" type="submit">Sign in</button>
+    <p id="error" class="error" role="alert"></p>
+  </form>
+  <script src="/login.js" defer></script>
+</body>
+</html>

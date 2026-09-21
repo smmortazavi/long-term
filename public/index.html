@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Long-term</title>
+  <link rel="stylesheet" href="/vendor/xterm/css/xterm.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <header class="topbar">
+    <strong class="brand">Long-term</strong>
+    <nav id="nav">
+      <a href="#/terminals" data-view="terminals">Terminals</a>
+      <a href="#/editor" data-view="editor">Editor</a>
+      <a href="#/tests" data-view="tests">Tests</a>
+    </nav>
+    <span class="spacer"></span>
+    <span id="workspace" class="muted" title="Workspace folder"></span>
+    <button id="logout" class="ghost">Sign out</button>
+  </header>
+  <main id="views">
+    <section id="view-terminals" class="view" hidden></section>
+    <section id="view-editor" class="view" hidden></section>
+    <section id="view-tests" class="view" hidden></section>
+  </main>
+  <div id="toasts" aria-live="polite"></div>
+
+  <script src="/vendor/xterm/lib/xterm.js"></script>
+  <script src="/vendor/xterm-fit/lib/addon-fit.js"></script>
+  <script src="/vendor/marked/lib/marked.umd.js"></script>
+  <script src="/vendor/dompurify/dist/purify.min.js"></script>
+  <script src="/vendor/monaco/vs/loader.js"></script>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

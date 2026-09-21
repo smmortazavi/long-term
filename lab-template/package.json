@@ -1,0 +1,9 @@
+{
+  "name": "long-term-testlab",
+  "private": true,
+  "type": "module",
+  "description": "Toolkit for the browser test engineer. Installed by `npm run testkit` in long-term.",
+  "dependencies": {
+    "playwright": "^1.49.0"
+  }
+}
